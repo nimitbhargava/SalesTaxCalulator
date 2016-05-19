@@ -21,18 +21,6 @@ public class BillProcessingTest {
 	private static final String OUTPUT_4 = "Sales Taxes: 1.50";
 	private static final String OUTPUT_5 = "Total: 29.83";
 
-	@Before
-	public void setUp() throws Exception {
-		caseOne.setBillTotal(0);
-		caseOne.setSalesTaxTotal(0);
-	}
-//	
-//	@After
-//	public void tearDown() throws Exception {
-//		caseOne.setBillTotal(0);
-//		caseOne.setBillTotal(0);
-//	}
-//	
 	@Test
 	public void test1() {
 		assertEquals(OUTPUT_1, caseOne.billProcessing(INPUT_1));

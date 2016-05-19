@@ -14,8 +14,7 @@ public class STCalculator {
 	private static double salesTaxTotal;
 
 	private static final String PRICE_AT = " at ";
-	private static final double BASIC_SALES_TAX = 0.10; // defined for basic
-														// sales tax
+	private static final double BASIC_SALES_TAX = 0.10; // defined for basic sales tax
 	private static final double IMPORT_DUTY = 0.05; // defined for import duty
 	private static final String EXIT = "exit";
 	private static final String IMPORTED = "imported";
@@ -113,8 +112,7 @@ public class STCalculator {
 		}
 		double price = bill.getPrice(item);
 		double importedValue = bill.isImported(item) ? price * IMPORT_DUTY : 0;
-		double salesTax = bill.isBSTApplicable(item) ? price * BASIC_SALES_TAX
-				: 0;
+		double salesTax = bill.isBSTApplicable(item) ? price * BASIC_SALES_TAX : 0;
 		double itemTotal = bill.getItemTotal(importedValue, salesTax, price);
 		bill.setSalesTaxTotal(bill.getSalesTaxTotal() + salesTax);
 		bill.setBillTotal(bill.getBillTotal() + itemTotal);

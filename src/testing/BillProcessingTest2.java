@@ -18,12 +18,6 @@ public class BillProcessingTest2 {
 	private static final String OUTPUT_3 = "Sales Taxes: 4.75";
 	private static final String OUTPUT_4 = "Total: 65.12";
 
-	@After
-	public void tearDown() throws Exception {
-		caseTwo.setBillTotal(0);
-		caseTwo.setBillTotal(0);
-	}
-	
 	@Test
 	public void test1() {
 		assertEquals(OUTPUT_1, caseTwo.billProcessing(INPUT_1));

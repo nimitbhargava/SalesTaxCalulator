@@ -21,12 +21,6 @@ public class BillProcessingTest3 {
 	private static final String OUTPUT_4 = "1 box of imported chocolates: 11.81";
 	private static final String OUTPUT_5 = "Sales Taxes: 4.70";
 	private static final String OUTPUT_6 = "Total: 74.64";
-
-	@After
-	public void tearDown() throws Exception {
-		caseThree.setBillTotal(0);
-		caseThree.setBillTotal(0);
-	}
 	
 	@Test
 	public void test1() {
