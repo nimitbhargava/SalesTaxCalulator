@@ -5,11 +5,12 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Test;
 
+import salestaxcalc.Bill;
 import salestaxcalc.STCalculator;
 
 public class BillProcessingTest2 {
 
-	STCalculator caseTwo = new STCalculator();
+	Bill caseTwo = new Bill();
 	private static final String INPUT_1 = "1 imported box of chocolates at 10.00";
 	private static final String INPUT_2 = "1 imported bottle of perfume at 47.50";
 	private static final String INPUT_3 = "exit";

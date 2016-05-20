@@ -6,11 +6,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import salestaxcalc.Bill;
 import salestaxcalc.STCalculator;
 
 public class BillProcessingTest {
 
-	STCalculator caseOne = new STCalculator();
+	Bill caseOne = new Bill();
 	private static final String INPUT_1 = "1 book at 12.49";
 	private static final String INPUT_2 = "1 music CD at 14.99";
 	private static final String INPUT_3 = "1 chocolate bar at 0.85";
